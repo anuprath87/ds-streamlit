@@ -4,13 +4,13 @@ from sklearn.linear_model import LinearRegression
 
 st.title("Linear Regression with Streamlit")
 
-#data = pd.read_csv("data.csv")
-#st.write(data)
+data = pd.read_csv("data.csv")
+st.write(data)
 
 # Sidebar - Upload CSV
-st.sidebar.header("Upload Your CSV File")
-data = st.sidebar.file_uploader("Upload CSV", type=["csv"])
-st.write(data)
+#st.sidebar.header("Upload Your CSV File")
+#data = st.sidebar.file_uploader("Upload CSV", type=["csv"])
+#st.write(data)
 
 x = data[['Hours_Studied']]
 y = data['Marks_Scored']
