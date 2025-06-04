@@ -20,4 +20,4 @@ model.fit(x, y)
 
 hours = st.number_input("Enter Hours Studied:", 1.0, 10.0, step=0.5)
 prediction = model.predict([[hours]])
-st.write("Predicted Marks:", prediction[0])
+st.write("Predicted Marks:", prediction)
