@@ -10,6 +10,7 @@ st.title("Linear Regression with Streamlit")
 # Sidebar - Upload CSV
 st.sidebar.header("Upload Your CSV File")
 data = st.sidebar.file_uploader("Upload CSV", type=["csv"])
+st.write(data)
 
 x = data[['Hours_Studied']]
 y = data['Marks_Scored']
